@@ -4,6 +4,9 @@ const readline = require("readline-sync")
 //global variables
 
 let endGame = false
+
+/////////////////
+//player stats
 const player = {
     name: "",
     health: 100,
@@ -20,9 +23,13 @@ walkChoice = ["walk", "stats"]
 // walk functions
 function walk(){
     if(player.radioPices.length === 6){
-        console.log(`With this radio pice you are able to make a working radio! 
+        console.log(`
+With this radio pice you are able to make a working radio! 
+
 With the radio working you are able to pick up a radio wave from a fort.
+
 The fort is offering a save haven from the Zombies.
+
 With your experance aganst the Zombes you were able to make it to the fort easy.
 
 Thank you ${player.name} for plying servival!`)
@@ -45,7 +52,10 @@ return endGame = true
        }
     } else if(option === 1){
         console.clear()
-        console.log(player)
+        console.log(`Your health is ${player.health}`)
+        console.log(`You have found ${player.invitory} 
+and ${player.radioPices.length} radio pices.`)
+        
     } else {
         console.clear()
         console.log("please select 1 or 2 to continue with the game.")
@@ -107,7 +117,7 @@ On the Zombie you find a pice of a radio and regained 10 health.`)
             }else{
                 player.health -= enemy.attack
                 console.clear()
-                console.log(`You turn to run but the ${enemy.name} atacked and you took ${enemy.attack}`)
+                console.log(`You turn to run but the ${enemy.name} atacked and you took ${enemy.attack} points of your health while your back was turned!`)
             }
         }
     }
@@ -146,7 +156,7 @@ function clearPath(){
 
 ///////////////
 //welcome text
-player.name = readline.question("Hello! Who do I have the pleaser of playing with today? ")
+player.name = readline.question("Hello! What is your name player? ")
 console.clear()
 console.log(`
 Welcome ${player.name} to The Servival!
