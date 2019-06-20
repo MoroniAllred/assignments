@@ -32,8 +32,8 @@ The fort is offering a save haven from the Zombies.
 
 With your experance aganst the Zombes you were able to make it to the fort easy.
 
-Thank you ${player.name} for plying servival!`)
-return endGame = true
+Thank you ${player.name} for playing survival!`)
+    return endGame = true
     }
     const option = readline.keyInSelect(walkChoice, "whould you like to walk or cheack your stats? ")
      
@@ -159,9 +159,9 @@ function clearPath(){
 player.name = readline.question("Hello! What is your name player? ")
 console.clear()
 console.log(`
-Welcome ${player.name} to The Servival!
+Welcome ${player.name} to The Survival!
 
-Well ${player.name} it has happend. The Zombie have over riden the world.`)
+Well ${player.name} it has happend. The Zombies have over riden the world.`)
 
 
 

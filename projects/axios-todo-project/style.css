@@ -1,0 +1,21 @@
+.todo {
+    border: 5px solid gray;
+    margin: 5px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    overflow: scroll;
+}   
+
+img{
+    height: 150px;
+}
+
+.strike{
+    text-decoration: line-through
+}
+
+#appendParent{
+    display: flex;
+    flex-direction: column
+}

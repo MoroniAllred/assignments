@@ -64,16 +64,26 @@
 // // ["dog", "cat", "mouse", "jackolope", "platypus"]
 // console.log(arrArr2)
 
-product(a, b, c, d, e) => const numbers = [a,b,c,d,e];
+// const product = (a, b, c, d, e) => {
+//   numbers = [a,b,c,d,e];
+//   numbers.reduce((acc, number) => {
+//     return acc * number
+//   }, 1)
+// }
+ 
+function populatePeople(names){
+  return names.map(function(name){
+      name = name.split(" ");
+      // your code
+      return {
+          firstName,
+          lastName 
+      }
+}
 
-  numbers.reduce(acc, number => {
-    return acc * number;
-  }, 1)
-  
-  function product(a, b, c, d, e) {  
-    var numbers = [a,b,c,d,e];
-  
-    return numbers.reduce(function(acc, number) {
-      return acc * number;
-    }, 1)
-  }
+populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"])
+//[
+//  {firstName: "Frank", lastName: "Peterson"},
+//  {firstName: "Suzy", lastName: "Degual"},
+//  {firstName: "Liza", lastName: "Jones"},
+//]

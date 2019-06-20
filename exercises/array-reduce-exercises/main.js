@@ -21,12 +21,12 @@
     // your code here
     const returnVotes = arr.reduce((final, voter) => {
        if(voter.voted){
-         final.voterTotal++
+         final += 1
+         return final
        }
-      },{
-       voterTotal: 0
-      } 
-   
+       return final
+      },0)
+   return returnVotes
    }
  
  var voters = [
