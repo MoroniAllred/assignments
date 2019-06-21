@@ -1,10 +1,15 @@
+body{
+    background-color: rgb(0, 174, 255);
+}
+
 .todo {
-    border: 5px solid gray;
+    border: 5px solid rgb(158, 158, 158);
     margin: 5px;
     display: inline-block;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 285px;
     overflow: scroll;
+    background-color: rgb(128, 128, 128);
 }   
 
 img{
@@ -12,10 +17,35 @@ img{
 }
 
 .strike{
-    text-decoration: line-through
+    text-decoration: line-through;
+}
+h1{
+    text-align: center;
 }
 
-#appendParent{
-    display: flex;
-    flex-direction: column
+h3{
+    text-align: center;
+}
+
+img{
+    float: left;
+}
+
+.priceBox{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.isItFinished{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.deleteDiv{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.editDiv{
+    text-align: center
 }
