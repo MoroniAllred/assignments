@@ -1,0 +1,62 @@
+#headerHead{
+    height: 10px;
+    width: 100%;
+    background-color: rgb(18, 90, 72);
+}
+
+header{
+    background-color: rgb(18, 90, 72);
+    background-image: url(./image/contours@2x.png), url(./image/noise.png), url(./image/gridlines.png),url(./image/zenGardenHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;  
+}
+
+#page{
+}
+
+#explination{
+    padding: 15px 10%;
+}
+
+#expaination2{
+    padding: 15px 10%; 
+}
+
+#backgroundImg{
+    width: 100%;
+}
+
+#explaination3{
+    padding: 15px 10%
+}
+
+section{
+    background-color: rgb(174, 206, 187);
+    background-image: url(./image/contours-opaque.png), url(./image/gridlines-opaque.png), url(./image/bamboo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background-color: rgb(18, 90, 72);
+    background-image: url(./image/contours@2x.png) ,url(./image/gridlines.png) ,url(./image/noise.png),url(./image/koi.jpg)
+
+}
+
+#footerFoot{
+
+}
+
+aside{background-color: rgb(240, 255, 250)
+
+}
+
+summary{
+    background-color: rgb(157, 190, 170);
+}

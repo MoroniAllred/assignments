@@ -12,7 +12,6 @@ function getRequst() {
 }
 
 function createList(todos) {
-    console.log(todos)
     for (let i = 0; i < todos.length; i++) {
         const div = document.createElement("div")
         const finisedbox = document.createElement("input")
@@ -45,12 +44,10 @@ function createList(todos) {
         editbut.textContent = "Edit"
         editDiv.classList.add("editDiv")
 
-
         strikeout(finisedbox, h1)
         remove(finisedbox, h1)
         putIt(finisedbox, todos, i)
         deleteToDo(deleteBut, finisedbox, todos[i])
-        // editIt(editbut, editForm, todos, i)
 
         div.classList.add("todo")
         div.appendChild(h1)
@@ -66,35 +63,10 @@ function createList(todos) {
         divDel.appendChild(deleteBut)
         div.appendChild(editDiv)
         editDiv.appendChild(editbut)
-        // div.appendChild(editForm)
         document.getElementById("appendParent").appendChild(div)
         editbut.addEventListener("click", function (event){
            editIt(todos, i, editDiv) 
         })
-
-
-
-        ////////   I AM WORKING HERE /////////////
-        //editbut.addEventListener('click', (e) => {
-            // // editPush.textContent = "Save";
-            // const editTitle = document.createElement("input");
-            // const editDecription = document.createElement("input");
-            // const editPrice = document.createElement("input");
-            // const editImageURL = document.createElement("input");
-
-            // editTitle.placeholder = "Title";
-            // editDecription.placeholder = "description";
-            // editPrice.type = "number";
-            // editPrice.placeholder = "$0";
-            // editImageURL.placeholder = "image Url";
-            // editTitle.name = "editTitle";
-            // editFormInput.appendChild(editTitle);
-            // editFormInput.appendChild(editDecription);
-            // editFormInput.appendChild(editPrice);
-            // editFormInput.appendChild(editImageURL);
-            
-
-        //})
     }
 }
 
@@ -165,17 +137,7 @@ function putIt(box, todos, i) {
             })
     })
  }
-
-// const editTitle = document.createElement("input");
-// const editDecription = document.createElement("input");
-// const editPrice = document.createElement("input");
-// const editImageURL = document.createElement("input");
-
 function editIt(todos, i, editDiv) {
-    // editBut.addEventListener("click", function (event) {
-
-    // if (editPush.textContent === "Edit") {
-    //     editPush.textContent = "Save";
         const editForm = document.createElement("form");
         const editTitle = document.createElement("input");
         const editDescription = document.createElement("input");
@@ -203,7 +165,6 @@ function editIt(todos, i, editDiv) {
         editForm.appendChild(saveBut)
         editForm.addEventListener("submit", function(event){
             event.preventDefault()
-            console.log(typeof editTitle.value)
             const putObject = {}
             if(editTitle.value !== ""){
                 putObject.title = editTitle.value
@@ -216,24 +177,15 @@ function editIt(todos, i, editDiv) {
             }
             if(editImageURL.value !== ""){
                 putObject.imgUrl = editImageURL.value
-            }else{
-                putObject.imgUrl ="https://images.unsplash.com/photo-1515847049296-a281d6401047?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-            }
-            axios.put("https://api.vschool.io/moroniallred/todo/" + todos[i]._id,  //{
+             }
+            axios.put("https://api.vschool.io/moroniallred/todo/" + todos[i]._id,  
                 putObject
-                // title: editTitle.value,
-                // description: editDescription.value,
-                // price: editPrice.value,
-                // imgUrl: editImageURL.value
             )
             .then(function () {
                 document.getElementById("appendParent").innerHTML = ""
                 getRequst()
             })
             .catch()
-            // removeChild
         })
-    //})
-   // })
 }
 getRequst()

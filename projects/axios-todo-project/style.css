@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(0, 174, 255);
+    background-color: rgb(81, 127, 148);
 }
 
 .todo {
@@ -7,7 +7,7 @@ body{
     margin: 5px;
     display: inline-block;
     width: 350px;
-    height: 285px;
+    height: 315px;
     overflow: scroll;
     background-color: rgb(128, 128, 128);
 }   
