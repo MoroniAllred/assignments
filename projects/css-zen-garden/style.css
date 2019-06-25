@@ -1,24 +1,49 @@
 #headerHead{
     height: 10px;
     width: 100%;
-    background-color: rgb(18, 90, 72);
+    background-color: rgb(1, 56, 38);
 }
 
-header{
-    background-color: rgb(18, 90, 72);
-    background-image: url(./image/contours@2x.png), url(./image/noise.png), url(./image/gridlines.png),url(./image/zenGardenHeader.jpg);
+#headerPic{
+    background-color: rgb(1, 56, 38);
+    background-image: url(./image/zenGardenHeader.jpg);
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 200px;
+}
+
+header{
+    
+    background-image: url(./image/contours@2x.png), url(./image/noise.png), url(./image/gridlines.png);
     display: flex;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;  
+    align-items: center;
+    flex-direction: column; 
+    height: 100%; 
+}
+
+#headerH1{
+    margin: 0
 }
 
 #page{
 }
+
+.down{
+    font-family: pt2g;
+    color: rgb(75, 133, 85);
+    text-decoration: none;
+}
+
+.sym{
+    font-family: symnbols;
+    text-decoration: none;
+    color: rgb(75, 133, 85);
+    background-color: rgb(127, 199, 130)
+    
+}
+
 
 #explination{
     padding: 15px 10%;
@@ -30,27 +55,38 @@ header{
 
 #backgroundImg{
     width: 100%;
+    background-image: url(./image/bamboo.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: rgb(174, 206, 187);
 }
+
+#backgroundImgTextur{
+    background-image: url(./image/contours-opaque.png), url(./image/gridlines-opaque.png);
+}
+
+
 
 #explaination3{
     padding: 15px 10%
 }
 
-section{
-    background-color: rgb(174, 206, 187);
-    background-image: url(./image/contours-opaque.png), url(./image/gridlines-opaque.png), url(./image/bamboo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* section{
+} */
 
 footer{
     background-color: rgb(18, 90, 72);
-    background-image: url(./image/contours@2x.png) ,url(./image/gridlines.png) ,url(./image/noise.png),url(./image/koi.jpg)
-
+    background-image: url(./image/contours@2x.png) ,url(./image/gridlines.png) ,url(./image/noise.png),url(./image/koi.jpg);
+    height: 300px;
 }
 
 #footerFoot{
-
+    background-color: rgb(1, 56, 38);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
 aside{background-color: rgb(240, 255, 250)
@@ -59,4 +95,48 @@ aside{background-color: rgb(240, 255, 250)
 
 summary{
     background-color: rgb(157, 190, 170);
+}
+
+@font-face{
+    font-family: pt2g;
+    src: url("./fonts/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsXy6KHHg.woff2")
+}
+
+@font-face{
+    font-family: wolf2;
+    src: url("./fonts/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDO-Wyrs.woff2")
+}
+
+@font-face{
+    font-family: wolf3;
+    src: url("./fonts/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDO-Wyrs\ \(1\.woff2")
+}
+
+@font-face{
+    font-family: symnbols;
+    src: url("./fonts/verdemoderna.woff")
+}
+
+h1{
+    font-family: pt2g;
+}
+
+h2{
+    font-family: pt2g;
+}
+
+h3{
+    font-family: wolf2
+}
+
+.footLink{
+    font-family: symnbols;
+    font-size: 50px;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(220, 248, 217)
+}
+
+p{
+    font-family: wolf3;
 }
