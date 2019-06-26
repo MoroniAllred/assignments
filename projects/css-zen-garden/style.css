@@ -24,7 +24,8 @@ header{
 }
 
 #headerH1{
-    margin: 0
+    margin: 0;
+    color: rgb(220, 248, 217);
 }
 
 #page{
@@ -43,6 +44,15 @@ header{
     background-color: rgb(127, 199, 130)
     
 }
+
+.noLine{
+    text-decoration: none
+}
+
+.dotted{
+    text-decoration: underline dotted
+}
+
 
 
 #explination{
@@ -71,13 +81,15 @@ header{
     padding: 15px 10%
 }
 
-/* section{
-} */
 
 footer{
     background-color: rgb(18, 90, 72);
     background-image: url(./image/contours@2x.png) ,url(./image/gridlines.png) ,url(./image/noise.png),url(./image/koi.jpg);
     height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #footerFoot{
@@ -87,6 +99,12 @@ footer{
     align-items: center;
     justify-content: space-around;
     
+}
+
+#footerh3{
+    font-family: none;
+    width: 80%;
+    font-size: 2em;
 }
 
 aside{background-color: rgb(240, 255, 250)
@@ -126,7 +144,8 @@ h2{
 }
 
 h3{
-    font-family: wolf2
+    font-family: wolf2;
+    color: rgb(220, 248, 217);
 }
 
 .footLink{
@@ -137,6 +156,23 @@ h3{
     color: rgb(220, 248, 217)
 }
 
+.by{
+    font-family: wolf2;
+    color: rgb(205, 214, 203);
+}
+
 p{
     font-family: wolf3;
+}
+
+h5{
+    display: inline;
+}
+
+.person{
+    font-display: wolf2
+}
+
+.headerH1::before{
+    
 }

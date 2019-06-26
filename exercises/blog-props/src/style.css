@@ -1,0 +1,124 @@
+*{
+    margin: 0
+}
+
+#nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    
+}
+
+.startBoot{
+    display: flex;
+    justify-self: flex-start;
+    color: white;
+
+}
+
+.navLink{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.acorLinks{
+    text-decoration: none;
+    color: white;
+}
+
+#fullHead{
+    background-image: url("https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+#head{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#headH1{
+    color: white;
+    font-size: 50px;
+    font-family: boldy;
+}
+
+#headP{
+    color: white;
+    font-size: 25px;
+}
+
+#blogDiv{
+    width: 450px;
+    padding: 5%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    margin: auto;
+    font-family: 
+}
+
+#title{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-family: boldy;
+}
+
+#description{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: lighte;
+}
+
+.buttonDiv{
+    display: flex;
+    margin: 0 40px;
+    justify-content: flex-end;
+    width: 85%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+#button{
+    height: 45px;
+    width: 150px;
+    color: white;
+    background-color: rgb(47, 130, 255);
+} 
+
+@font-face{
+    font-family: boldy;
+    src: url("./fonts/mem5YaGs126MiZpBA-UN8rsOUuhpKKSTjw.woff2")
+}
+@font-face{
+    font-family: lighte;
+    src: url("./fonts/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2")
+}
+
+@font-face{
+    font-family: sym;
+    src: url("")
+}
+
+/* @import url("https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2");
+
+@import url("https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN8rsOUuhpKKSTjw.woff2");
+
+@import url("http://www.csszengarden.com/214/verdemoderna.woff"); */
+
+#footerP{
+    text-align: center;
+}
+
+.symb{
+    height: 40px;
+    width: 40px;
+}
