@@ -1,0 +1,31 @@
+.diceBoxDiv{
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(5, 241, 253);
+}
+
+.flexDice{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button{
+    display: flex;
+    margin: auto;
+    background-color: black;
+    color: rgb(5, 241, 253);
+}
+
+.center{
+    background-image: url("https://images.unsplash.com/photo-1519744346361-7a029b427a59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}

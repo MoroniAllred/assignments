@@ -1,0 +1,12 @@
+.box{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.boxGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
