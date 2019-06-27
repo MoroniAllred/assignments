@@ -1,0 +1,23 @@
+body{
+    background-image: radial-gradient(circle at 20% 30%, red, blue);
+}
+
+.highDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.heros{
+    display: flex;
+    flex-direction: column; 
+    border: 3px solid black;
+    margin: 10px;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.267)
+}
+
+.heroImg{
+    height: 250px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.253);
+}

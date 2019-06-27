@@ -83,7 +83,7 @@
     display: flex;
     margin: 0 40px;
     justify-content: flex-end;
-    width: 85%;
+    width: 90%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.137);
 }
 
@@ -103,22 +103,22 @@
     src: url("./fonts/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2")
 }
 
-@font-face{
-    font-family: sym;
-    src: url("")
+#footDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    justify-content: center;
 }
 
-/* @import url("https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2");
-
-@import url("https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN8rsOUuhpKKSTjw.woff2");
-
-@import url("http://www.csszengarden.com/214/verdemoderna.woff"); */
-
-#footerP{
+/* #footerP{
     text-align: center;
-}
+} */
 
 .symb{
-    height: 40px;
-    width: 40px;
+    font-size: 60px;
+    background-color: white;
+    color: black;
+    border-radius: 60%;
+    
 }

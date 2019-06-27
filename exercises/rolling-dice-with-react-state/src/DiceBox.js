@@ -11,6 +11,7 @@ class DiceBox extends Component{
                 Math.floor(Math.random() * 6 + 1),
                 Math.floor(Math.random() * 6 + 1),
                 Math.floor(Math.random() * 6 + 1),
+                Math.floor(Math.random() * 6 + 1),
                 Math.floor(Math.random() * 6 + 1)
             ]
             // die1: 1,
@@ -25,6 +26,7 @@ class DiceBox extends Component{
 
         this.setState({
             numArr: [
+                Math.floor(Math.random() * 6 + 1),
                 Math.floor(Math.random() * 6 + 1),
                 Math.floor(Math.random() * 6 + 1),
                 Math.floor(Math.random() * 6 + 1),
