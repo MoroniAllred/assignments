@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+
+
+.mappedDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dataDiv{
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+p{
+    background-color: rgba(0, 132, 255, 0.493);
+    padding: 5%;
+    margin: 0;
+    text-align: center;
+}
+
+.headerDiv{
+    background-color: black;
+    color: white;
+    margin: 0;
+    text-align: center;
+    height: 100px;
+    background-image: url("https://static.politico.com/dims4/default/4a53267/2147483647/resize/1160x%3E/quality/90/?url=http%3A%2F%2Fs3-origin-images.politico.com%2F2014%2F06%2F13%2F140613_pitney_godfather_paramount.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyDiv{
+    background-color: rgb(36, 97, 153);
+}

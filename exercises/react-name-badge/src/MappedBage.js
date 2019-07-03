@@ -5,8 +5,11 @@ const MappedBage = (props) => {
     const mappedBage = props.bageArr.map((person, i) => <Badge
                                         name = {person.firstName + " " + person.lastName}
                                         email = {person.email}
+                                        gender ={person.gender}
                                         phoneNumber = {person.phoneNumber}
-                                        birthPlace = {person.birthPlace}
+                                        birthCity = {person.birthCity}
+                                        stateOrProvince = {person.stateOrProvince}
+                                        country = {person.country}
                                         birthday = {person.birthday}
                                         favFood = {person.favFood}
                                         description = {person.description} />)

@@ -6,8 +6,9 @@ const Badge = (props) => {
         <div>
             <h1>Name: {props.name}</h1>
             <h6>Email Adress: {props.email}</h6>
+            <p>Gender: {props.gender}</p>
             <h6>Phone Number: ({props.phoneNumber.substring(0,3)}) {props.phoneNumber.substring(3,6)}-{props.phoneNumber.substring(6)}</h6>
-            <p>Place of Birth: {props.birthPlace}</p>
+            <p>Place of Birth: {props.birthCity}, {props.stateOrProvince}, {props.country} </p>
             <p>Date of Birth: {moment.utc(props.birthday).format("L")}</p>
             <p>Favorit Food: {props.favFood}</p>
             <p>Other Info: {props.description}</p>

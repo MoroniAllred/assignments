@@ -10,15 +10,19 @@ class App extends Component {
             firstName: "",
             lastName: "",
             email: "",
-            birthPlace: "",
+            birthCity: "",
+            stateOrProvince: "",
+            country: "",
             birthday: "",
+            gender: "",
             phoneNumber: "",
             favFood: "",
             description: "",
             disabled: true,
-            bageArr: []
+            bageArr: [],
         }
     }
+
 
     handleChange = (e) => {
         this.setState({
@@ -29,12 +33,15 @@ class App extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        const bage = {  
+        const badge = {  
             firstName: this.state.firstName,
             lastName: this.state.lastName,
             email: this.state.email,
             birthday: new Date(this.state.birthday),
-            birthPlace: this.state.birthPlace,
+            birthCity: this.state.birthCity,
+            country: this.state.country,
+            stateOrProvince: this.state.stateOrProvince,
+            gender: this.state.gender,
             phoneNumber: this.state.phoneNumber,
             favFood: this.state.favFood,
             description: this.state.description}
@@ -44,11 +51,13 @@ class App extends Component {
             lastName: "",
             email: "",
             birthday: "",
-            birthPlace: "",
+            birthCity: "",
+            country: "",
+            stateOrProvince: "",
             phoneNumber: "",
             favFood: "",
             description: "",
-            bageArr: [...prevState.bageArr, bage]
+            bageArr: [...prevState.bageArr, badge]
         }))
 
     }
@@ -58,27 +67,21 @@ class App extends Component {
     render(){
         return (
             <div>
-                <BadgeForm
+                <BadgeForm 
                         firstName = {this.state.firstName}
                         lastName = {this.state.lastName}
                         email = {this.state.email}
                         birthday = {this.state.birthday}
-                        birthPlace = {this.state.birthPlace}
+                        birthCity = {this.state.birthCity}
+                        stateOrProvince ={this.state.stateOrProvince}
+                        gender = {this.state.gender}
                         phoneNumber = {this.state.phoneNumber}
                         favFood = {this.state.favFood}
                         description = {this.state.description}
                         handleChange = {this.handleChange}
                         handleSubmit = {this.handleSubmit}
-                        />
+                        />      
                 <MappedBage 
-                        firstName = {this.state.firstName}
-                        lastName = {this.state.lastName}
-                        email = {this.state.email}
-                        birthday = {this.state.birthday}
-                        birthPlace = {this.state.birthPlace}
-                        phoneNumber = {this.state.phoneNumber}
-                        favFood = {this.state.phoneNumber}
-                        description = {this.state.description}
                         bageArr = {this.state.bageArr}/>
             </div>
         )
