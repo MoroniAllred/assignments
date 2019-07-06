@@ -7,7 +7,10 @@ const MappedCountries = (props) => {
                                                             name ={country.name}
                                                             code = {country.code}/>)
     return(
-        <select name="country" onChange={props.handleChange}>
+        <select 
+            name="country" 
+            onChange={props.handleChange}
+            className="birth">
             {mappedCountries}
         </select>
     )                                                        

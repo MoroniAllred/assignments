@@ -66,7 +66,7 @@ class App extends Component {
 
     render(){
         return (
-            <div>
+            <div className="appDiv">
                 <BadgeForm 
                         firstName = {this.state.firstName}
                         lastName = {this.state.lastName}

@@ -15,7 +15,7 @@ const MappedBage = (props) => {
                                         description = {person.description} />)
 
     return(
-        <div>
+        <div className="mapBadgeDiv">
             {mappedBage}
         </div>
     )

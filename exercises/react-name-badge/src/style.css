@@ -1,2 +1,89 @@
-#badeForm{
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(151, 151, 151)
+}
+
+.appDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#badgeForm{
+    border: 3px solid rgb(80, 79, 79);
+    border-radius: 4%;
+    background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=649&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+.badgeDiv{
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 4%;
+    background-color: rgba(157, 170, 175, 0.678);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    display: grid;
+    margin: 10px;
+}
+
+.email{
+    margin: 10px;
+}
+
+.birthDate{
+    display: flex;
+    margin: 10px;
+}
+
+.birth{
+    display: grid;
+    margin: 10px;
+}
+
+.gender{
+    margin-left: 10px;
+}
+
+.number{
+    display: grid;
+    margin: 10px;
+}
+
+.food{
+    display: grid;
+    margin: 10px;
+}
+
+.textarea{
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.formButton{
+    margin: 10px;
+}
+
+.nameH1{
+    margin-bottom: 15px;
+}
+
+.evenSpace{
+    margin-bottom: 10px;
+}
+
+.genderSpance{
+    margin-left: 10px;
 }
