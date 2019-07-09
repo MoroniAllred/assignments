@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+}
+
+.homeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbarDiv{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center
+}
+
+.chuckApiDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dadApiDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footDiv{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+
+.linkedinLink{
+    font-size: 50px
+}
+
+.githubLink{
+    font-size: 50px
+}
+
+.gmailIcon{
+    font-size: 50px
+}

@@ -5,6 +5,9 @@
 // if (pet.length === 3){
 
 // }
+
+/* in the function in lines 10 to 16 i am setting a var to in which I am cheeking 
+to see if the next word I input is the smae length as my fisrt variable */
 var isACat="dog"
 if( isACat=== "cat") {
     console.log("is the same")
@@ -12,23 +15,29 @@ if( isACat=== "cat") {
     console.log("not the same")
 }
 
+/* in line 18 to 22 I am setting a verable with two objects*/
 var person = {
     name: "Bobby",
     age: 12
 }
 
+
+//this if statment checks to see if the persone variable age is older ther 18
 if(person.age > 17) {
     console.log("Come on in")
 } else {
     console.log("Just leave")
 }
 
+//this if statment checks to see if the person variable name object starts with a "B"
 if(person.name.length[0] = "B") {
     console.log("Come on in")
 } else {
     console.log("Just leave")
 }
 
+/* this if statment is to ckeck to see is the persone variable objects botheth start
+ with the letter "B" nad the age is over 18 */
 if(person.name.length[0] = "B" && person.age > 17){
     console.log("Come on in")
 } else {

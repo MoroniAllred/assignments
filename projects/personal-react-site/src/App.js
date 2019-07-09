@@ -1,10 +1,11 @@
 import React from "react"
-import Navbar from "./Navbar"
+import Navbar from "./components/Navbar.js"
 import { Switch, Route } from "react-router-dom"
-import Home from "./Home.js"
-import ChuckNoris from "./ChuckNoris.js"
-import DadJokes from "./DadJokes.js"
-import Footer from "./Footer.js"
+import Home from "./components/Home.js"
+import ChuckNoris from "./components/ChuckNorisApi.js"
+import DadJokes from "./components/DadJokesApi.js"
+import Footer from "./components/Footer.js"
+import "./style.css"
 
 const App = () => {
 
@@ -13,8 +14,8 @@ const App = () => {
             <Navbar/>
             <Switch>
                 <Route exact path = "/" component={Home}/>
-                <Route path = "/chunkNoris" component={ChuckNoris}/>
-                <Route path = "/dadJokes" component={DadJokes}/>
+                <Route path = "/chuckNorisApi" component={ChuckNoris}/>
+                <Route path = "/dadJokesApi" component={DadJokes}/>
             </Switch>
             <Footer/>
         </div>

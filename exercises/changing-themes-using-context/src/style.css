@@ -1,0 +1,54 @@
+*{
+    margin: 0
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center;
+}
+
+.main{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center
+}
+
+.theme-light{
+    background-color: rgb(168, 235, 212);
+}
+
+.theme-dark{
+    background-color: rgb(48, 97, 81)
+}
+
+.header-light{
+    background-color: rgb(145, 204, 241);
+    color: blueviolet
+}
+
+.header-dark{
+    background-color: rgb(78, 102, 117);
+    color: rgb(180, 145, 212)
+}
+
+.footer-light{
+    background-color: rgb(195, 164, 199)
+}
+
+.footer-dark{
+    background-color: rgb(83, 70, 85)
+}
+
+.main-dark{
+    color: aliceblue
+}

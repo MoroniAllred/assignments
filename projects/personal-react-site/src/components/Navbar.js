@@ -4,10 +4,10 @@ import { Link, withRouter } from "react-router-dom"
 const Navbar = () => {
 
     return(
-        <div>
+        <div className="navbarDiv">
             <Link to="/">Home</Link>
-            <Link to="/chuckNoris">Chuck Noris jokes</Link>
-            <Link to="/dadJokes"> Dad jokes</Link>
+            <Link to="/chuckNorisApi">Chuck Noris jokes</Link>
+            <Link to="/dadJokesApi"> Dad jokes</Link>
         </div>
     )
 }
