@@ -15,23 +15,27 @@ class ChuckNorisProvider extends Component {
     }
 
     handleChuckClick = () => {
-        axios.get("https://api.chucknorris.io/jokes/random")
-        .then(res => {
+        // axios.get("https://api.chucknorris.io/jokes/random")
+        // .then(res => {
+            axios.get("http://api.icndb.com/jokes/random")
+            .then(res =>{
             this.setState({
-                chuckJoke: res.data.value,
-                chuckFavButton: true,
-                _id: res.data.id + "c"
+                chuckJoke: res.data.value.joke,
+                favorit: true,
+                _id: res.data.value.id + "c"
             })
         })
         .catch(err => console.log(err))
     }
 
     saveToChuckFavorit = () => {
-        if(!this.state.chuckFavoritArr.includes(this.state.chuckJoke)){
+        if(!this.state.chuckFavoritArr.includes(this.state._id)){
             this.setState({
-                chuckFavoritArr: this.state.chuckJoke
+                chuckFavoritArr: this.state._id
             })
-            localStorage.setItem(this.state._id, this.state.chuckJoke)
+            const favChuck={chuck: this.state.chuckJoke, id: this.state._id}
+            localStorage.setItem(this.state._id, JSON.stringify(favChuck))
+            alert("It has been saved to favorites!")
         }
     }
 
@@ -44,7 +48,7 @@ class ChuckNorisProvider extends Component {
                     _id: this.state._id,
                     chuckFavoritArr: this.state.favoritArr,
                     handleChuckClick: this.handleChuckClick,
-                    saveToFavorit: this.saveToFavorit
+                    saveToChuckFavorit: this.saveToChuckFavorit,
                     }}>
                 {this.props.children}
             </ChuckNorisContext.Provider>

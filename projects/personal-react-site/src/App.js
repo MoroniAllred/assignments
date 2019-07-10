@@ -8,6 +8,7 @@ import Footer from "./components/Footer.js"
 import "./style.css"
 import ChuckNorisProvider from "./context/ChuckNoriosProvider.js"
 import JokesProvider from "./context/JokesProvider.js"
+import Favorites from "./components/Favorites.js"
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
                         <Route exact path = "/" component={Home}/>
                         <Route path = "/chuckNorisApi" component={ChuckNoris}/>
                         <Route path = "/JokesApi" component={Jokes}/>
+                        <Route path = "/favorites" component={Favorites}/>
                     </Switch>
                 </JokesProvider>
             </ChuckNorisProvider>

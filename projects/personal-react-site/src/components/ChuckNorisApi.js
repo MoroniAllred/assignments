@@ -9,7 +9,7 @@ const ChuckNorisApi = (props) =>{
             <ChuckNorisText chuckJoke={props.chuckJoke}/>
             <span className="buttons">
                 <button onClick={ props.handleChuckClick} className="chunkButton">New Joke!</button>
-                <button onClick={ props.saveToChuckFavorit} className={`buttonIs-${props.chuckFavButton} chunkButton`}>Save to favorits!</button>
+                <button onClick={ props.saveToChuckFavorit} className={`buttonIs-${props.favorit} chunkButton`}>Save to favorits!</button>
             </span>
         </div>
     )

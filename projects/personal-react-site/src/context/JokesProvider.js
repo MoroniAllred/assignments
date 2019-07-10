@@ -10,9 +10,10 @@ class JokesProvider extends Component {
             jokes: "Hit the button to gernate a joke!",
             _id: "",
             punchline: "",
-            jokesFavButton: false,
+            jokesPunchButton: false,
             jokesFavoritArr: [],
             punchlineArr: [],
+            punchShow: false
         }
     }
 
@@ -24,20 +25,28 @@ class JokesProvider extends Component {
                 jokes: res.data.setup,
                 _id: res.data.id + "j",
                 punchline: res.data.punchline,
-                jokesFavButton: true
+                jokesPunchButton: true,
+                punchShow: false
             })
         })
         .catch(err => console.log(err))
     }
-        
+
+    showPunchline = () => {
+        this.setState({
+            punchShow: true
+        })  
+    }     
 
     saveToJokesFavorits = () => {
-        if(!this.state.jokesFavoritArr.includes(this.state.jokes)){
+        if(!this.state.jokesFavoritArr.includes(this.state._id)){
             this.setState({
-                jokesFavoritArr: this.state.jokes,
+                jokesFavoritArr: this.state._id,
                 punchlineArr: this.state.punchline
             })
-            localStorage.setItem(this.state._id, this.state.jokes) 
+            let fullJoke= {joke: this.state.jokes, punchline: this.state.punchline, id: this.state._id}
+            localStorage.setItem(this.state._id, JSON.stringify(fullJoke))
+            alert("It has been saved in your favorites!") 
         }
     }
 
@@ -48,11 +57,13 @@ class JokesProvider extends Component {
                     jokes: this.state.jokes,
                     punchline: this.state.punchline,
                     _id: this.state.punchline_id,
-                    jokesFavButton: this.state.jokesFavButton,
+                    jokesPunchButton: this.state.jokesPunchButton,
                     jokesFavoritArr: this.state.jokesFavoritArr,
                     punchlineArr:this.state.punchlineArr,
                     handleJokesClick: this.handleJokesClick,
-                    saveToJokesFavorits: this.saveToJokesFavorits
+                    saveToJokesFavorits: this.saveToJokesFavorits,
+                    showPunchline: this.showPunchline,
+                    punchShow: this.state.punchShow
                 }}>
                 {this.props.children}
             </JokesContect.Provider>

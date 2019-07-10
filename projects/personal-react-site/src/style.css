@@ -9,6 +9,7 @@
     text-align: center;
     height: 80vh;
     background-color: #A7ADC6;
+    overflow: scroll;
 }
 
 .homeH1{
@@ -37,6 +38,7 @@
     align-items: center;
     height: 80vh;
     background-color: rgb(118, 129, 146);
+    overflow: scroll;
 }
 
 .chunkButton{
@@ -48,21 +50,22 @@
     width: 60%;
 }
 
-.dadApiDiv{
+.jokesApiDiv{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: #56667A
+    background-color: #56667A;
+    overflow: scroll;
 }
 
-.dadJoke{
+.jokes{
     margin: 25px
 }
 
-.dadButton{
+.jokesButton{
     margin-top: 15vh;
 }
 
@@ -85,6 +88,20 @@
     color: black;
 }
 
+.favoritesDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    background-color: rgb(152, 161, 197);
+    overflow: scroll;
+}
+
+.mappedDiv{
+    width: 60%;
+    margin: 20px
+}
 
 .navLink{
     text-decoration: none;
@@ -97,4 +114,16 @@
 
 .buttons{
     display: flex;
+}
+
+.punchline-false{
+    display: none;
+}
+
+.jokeFav-false{
+    display: none;
+}
+
+.punchButton-false{
+    display: none;
 }
