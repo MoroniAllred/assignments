@@ -5,24 +5,47 @@
 .homeDiv{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    height: 80vh;
+    background-color: #A7ADC6;
+}
+
+.homeH1{
+    margin: 25px;
+}
+
+.homeP{
+    display: flex;
+    width: 60%;
+    margin-top: 15vh;
 }
 
 .navbarDiv{
     display: flex;
     justify-content: space-evenly;
     height: 70px;
-    align-items: center
+    align-items: center;
+    background-color: #759EB8;
 }
 
 .chuckApiDiv{
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    height: 80vh;
+    background-color: rgb(118, 129, 146);
+}
+
+.chunkButton{
+    margin-top: 15vh;
+}
+
+.chunkJoke{
+    margin: 25px;
+    width: 60%;
 }
 
 .dadApiDiv{
@@ -31,6 +54,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80vh;
+    background-color: #56667A
+}
+
+.dadJoke{
+    margin: 25px
+}
+
+.dadButton{
+    margin-top: 15vh;
 }
 
 .footDiv{
@@ -39,16 +72,29 @@
     justify-content: space-evenly;
     height: 100px;
     align-items: center;
+    background-color: #7392B7;
 }
 
 .linkedinLink{
-    font-size: 50px
+    font-size: 50px;
+    color:  rgb(0,119,181)
 }
 
 .githubLink{
-    font-size: 50px
+    font-size: 50px;
+    color: black;
 }
 
-.gmailIcon{
-    font-size: 50px
+
+.navLink{
+    text-decoration: none;
+    color: black;
+}
+
+.buttonIs-false{
+    display: none;
+}
+
+.buttons{
+    display: flex;
 }

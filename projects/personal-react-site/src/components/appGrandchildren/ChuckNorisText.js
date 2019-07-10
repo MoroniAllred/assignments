@@ -4,7 +4,9 @@ import React from "react"
 const ChuckNorisText = (props) => {
 
     return(
-        <h3>{props.joke}</h3>
+        <div className="chunkJoke">
+            <h3 >{props.chuckJoke}</h3>
+        </div>
     )
 }
 
