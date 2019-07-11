@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import FavoritText from "./appGrandchildren/FavoritText"
 
 class Favorites extends Component {
     constructor(){
@@ -34,23 +35,20 @@ class Favorites extends Component {
         }))
     }
 
-    render(){
-        console.log(this.state.jokes)
-        const mappedFavs = this.state.jokes.map((joke) => {
+    render = () =>{
+        const mappedFavs = this.state.jokes.map((joke, i) => {
             joke = joke
             return(
                 <div className="mappedDiv">
-                    <span>
-                        <h3>{joke.joke}</h3>
-                        <h3>{joke.punchline}</h3>
-                        
-                    </span>
-                    <span>
-                        <h3>{joke.chuck}</h3>
-                    </span>
-                        <button onClick={this.remove} id={joke.id}>Remove Favorite</button>
+                    <FavoritText
+                        key={i}
+                        remove={this.remove}
+                        chuck={joke.chuck}
+                        joke={joke.joke}
+                        punchline={joke.punchline}
+                        id={joke.id}/>
                 </div>
-                )
+            ) 
             
         })
         return(
