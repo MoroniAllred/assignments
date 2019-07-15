@@ -55,9 +55,9 @@ class JokesApi extends Component {
                 <JokesText jokes={this.state.jokes}
                             punchline={this.state.punchline}
                             punchShow={this.state.punchShow}/>
-                <button onClick={this.handleJokesClick} className="jokesButton">New Joke!</button>
+                <button onClick={this.handleJokesClick}>New Joke!</button>
                 <button onClick={this.showPunchline} className={`punchButton punchButton-${this.state.jokesPunchButton}`}>Get puchline!</button>
-                <button onClick={this.saveToJokesFavorits} className={`jokeFav jokeFav-${this.state.punchShow}`}>Put in favorits!</button>
+                <button onClick={this.saveToJokesFavorits} className={`jokeFav jokeFav-${this.state.punchShow}`}>Save to favorits!</button>
             </div>
         )
     } 

@@ -76,16 +76,12 @@ p{
     height: 75vh;
     background-color: rgb(118, 129, 146);
     overflow: scroll;
-    /* margin-bottom: 3px;
-    box-shadow: 0 3px 4px */
 }
 
-.chunkButton{
-    margin-top: 15vh;
-}
 
 .chunkJoke{
     margin: 25px;
+    margin-bottom: 10vh;
     width: 60%;
 }
 
@@ -104,8 +100,8 @@ p{
     margin: 25px
 }
 
-.jokesButton{
-    margin-top: 15vh;
+.jokeText{
+    margin-bottom: 7vh;
 }
 
 .footDiv{
@@ -137,7 +133,7 @@ p{
     align-items: center;
     text-align: center;
     height: 75vh;
-    background-color: rgb(92, 103, 148);    
+    background-color: rgb(85, 94, 128);    
     overflow: scroll;
 }
 
@@ -145,6 +141,7 @@ p{
     width: 60%;
     margin: 20px
 }
+
 
 .navLink{
     text-decoration: none;
@@ -157,6 +154,9 @@ p{
 
 .buttons{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .punchline-false{
@@ -173,6 +173,10 @@ p{
 
 .hamberlinks{
     display: none;
+}
+
+.favedJoke{
+    margin-bottom: 20px;
 }
 @media only screen and (max-width: 700px){
     .hamberlinks{

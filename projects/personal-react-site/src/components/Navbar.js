@@ -21,7 +21,7 @@ class Navbar extends Component {
 
     render(){
         return(
-            <div className="tranitionDiv">
+            <div>
                 <div className={`hamberlinks hambergerlinks-${this.state.hambergerValue}`}>
                     <Link to="/" className="navLink">Home</Link>
                     <Link to="/chuckNorisApi" className="navLink">Chuck Noris jokes</Link>

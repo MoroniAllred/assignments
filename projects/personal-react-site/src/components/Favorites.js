@@ -36,12 +36,18 @@ class Favorites extends Component {
     }
 
     render = () =>{
+        if(this.state.jokes.length === 0){
+            return (
+                <div className="favoritesDiv">
+                    <h1 className="mappedDiv">Save your favorite jokes to see them here!</h1>
+                </div>
+            )
+        }else{
         const mappedFavs = this.state.jokes.map((joke, i) => {
             joke = joke
             return(
-                <div className="mappedDiv">
+                <div className="mappedDiv" key={i}>
                     <FavoritText
-                        key={i}
                         remove={this.remove}
                         chuck={joke.chuck}
                         joke={joke.joke}
@@ -56,6 +62,7 @@ class Favorites extends Component {
                 {mappedFavs}
             </div>
         )
+    }
     }
 }
 export default Favorites

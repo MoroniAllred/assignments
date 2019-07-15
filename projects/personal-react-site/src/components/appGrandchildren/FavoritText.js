@@ -4,13 +4,13 @@ const FavoritText = (props) => {
 
     return(
         <div key={props.i}>
-            <span>
+            <span >
                 <h3>{props.joke}</h3>
-                <h3>{props.punchline}</h3>
+                <h3 className="favedJoke">{props.punchline}</h3>
                 
             </span>
-            <span>
-                <h3>{props.chuck}</h3>
+            <span >
+                <h3 className="favedJoke">{props.chuck}</h3>
             </span>
                 <button onClick={props.remove} id={props.id}>Remove Favorite</button>
         </div>
