@@ -1,4 +1,5 @@
 import React from "react"
 import ReactDON from "react-dom"
+import App from "./App.js"
 
-ReactDON.render( .document.getElementById("root"))
+ReactDON.render(<App/>, document.getElementById("root"))

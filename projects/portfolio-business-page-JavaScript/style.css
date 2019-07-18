@@ -1,0 +1,71 @@
+*{
+    margin: 0
+}
+
+.indexMain{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-image: linear-gradient(to right, black, rgb(78, 78, 78))
+}
+
+.indexDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 70vh;
+    text-align: center;
+    color: rgb(165, 164, 164);
+    background-image: linear-gradient(to right, rgb(31, 31, 31), rgb(77, 76, 76)); 
+    border-radius: 4%;
+    box-shadow: -5px 10px black;
+    text-shadow: -2px 4px black;
+}
+
+.indexButton{
+    background-image: linear-gradient(to right, black, rgb(124, 124, 124));
+    border: 0;
+    margin-top: 15px;
+}
+
+.buttonText{
+    color: rgb(165, 164, 164);
+    text-decoration: none;
+}
+
+.indexP{
+    width: 80%;
+    margin-top: 15px;
+}
+
+.homeDiv{
+    background-image: url("https://images.unsplash.com/photo-1526392587392-d1627b6c134a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.homeChildDiv{
+    background-color: rgba(53, 53, 53, 0.397);
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(104, 102, 102, 0.582);
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footer{
+    
+}

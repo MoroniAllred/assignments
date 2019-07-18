@@ -1,0 +1,121 @@
+*{
+    margin: 0
+}
+
+.app{ 
+    background-image: url("https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2775&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.appSpan{
+    background-color: rgba(209, 209, 209, 0.452);
+    background-attachment: fixed
+}
+
+.header{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway-regular;
+}
+
+.about{
+    height: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: raleway-regular;
+}
+
+.aboutMe{
+    width: 30vw
+}
+
+.skills{
+    width: 30vw
+}
+
+.skillList{
+    font-family: raleway-light;
+}
+
+.aboutPicture{
+    height: 250px;
+    width:  250px;
+    background-image: url("./image/trreW.jpeg");
+    background-position: center;
+    background-size: cover;
+    transform: rotate(90deg);
+    border-radius: 50%;
+}
+
+.footer{
+    background-color: rgb(170, 168, 168);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkedIn{
+    color: rgb(0,119,181);
+    font-size: 50px;
+}
+
+.github{
+    color: black;
+    font-size: 50px;
+}
+
+.projects{
+    height: 500px;
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+    font-family: raleway-regular;
+}
+
+.download{
+    padding-top: 20px;
+    text-decoration: none;
+    color: black
+}
+
+.resumeDiv{
+    margin-top: 20px;
+}
+
+@font-face{
+    font-family: raleway-regular;
+    src: url(./fonts/Raleway-Regular.ttf)
+}
+
+@font-face{
+    font-family: raleway-light;
+    src: url(./fonts/Raleway-Light.ttf)
+}
+
+@media only screen and (max-width: 700px){
+    .about{
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .aboutMe{
+        width: 70vw;
+        margin-top: 25px;
+    }
+
+    .skills{
+        width: 70vw;
+        margin-top: 25px;
+    }
+
+    .aboutPicture{
+        margin: 25px;
+    }
+}
