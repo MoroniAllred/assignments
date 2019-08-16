@@ -42,7 +42,12 @@
     margin-top: 15px;
 }
 
+.navbarLinks{
+    color: white
+}
+
 .homeDiv{
+    background-color: rgb(107, 107, 107);
     background-image: url("https://images.unsplash.com/photo-1526392587392-d1627b6c134a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     height: 100vh;
     background-position: center;
@@ -60,12 +65,19 @@
     justify-content: flex-end;
     background-color: rgba(104, 102, 102, 0.582);
     height: 10vh;
-    align-items: center
+    align-items: center;
+    color: white
 }
 
 a{
     text-decoration: none;
     margin: 10px;
+}
+
+.homeMainParent{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
 }
 
 .homeMain{
@@ -75,6 +87,7 @@ a{
     align-items: center;
     text-align: center;
     height: 50vh;
+    width: 60vw;
 }
 
 .homeText{
@@ -82,7 +95,24 @@ a{
 }
 
 .footer{
+    display: flex;
+    justify-content: space-between;
     height: 10vh;
     background-color: rgb(34, 34, 34);
     color: white;
+}
+
+.contact{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: none;
+}
+
+.contactInfo{
+    display: block;
+    background-color: rgb(53, 52, 52);
+}
+
+.contactHidden{
+    display: none;
 }

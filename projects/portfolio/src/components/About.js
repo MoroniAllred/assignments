@@ -18,13 +18,19 @@ const About = () => {
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>React</li>
-                    <li>Github</li>
+                    <li>Git</li>
                     <li>Node.js</li>
+                    <li>ES6</li>
+                    <li>AJAX/HTTP</li>
+                    <li>Express </li>
+                    <li>Mongoose</li>
+                    <li>MongoDB</li>
+                    <li>JSON</li>
                 </ul>
                 <div className="resumeDiv">
-                    <a href={resume} download="Moroni_Allred's_Resume.pdf" className="download"> Click to download my resume!</a>
+                    <a href="https://docs.google.com/document/d/16Gju7YYO_UliqrbDQQhgFQdmI2eUYdQrEHRT9NLJYO4/edit?usp=sharing" className="download"> Click to download my resume!</a>
                 </div>
-            </div >
+            </div>
             <div className="aboutPicture">
 
             </div>

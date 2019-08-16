@@ -7,7 +7,7 @@ class JokesApi extends Component {
     constructor(){
         super()
         this.state = {
-            jokes: "Hit the button to gernate a joke!",
+            jokes: "Hit the button to generate a joke!",
             _id: "",
             punchline: "",
             jokesPunchButton: false,
@@ -56,8 +56,8 @@ class JokesApi extends Component {
                             punchline={this.state.punchline}
                             punchShow={this.state.punchShow}/>
                 <button onClick={this.handleJokesClick}>New Joke!</button>
-                <button onClick={this.showPunchline} className={`punchButton punchButton-${this.state.jokesPunchButton}`}>Get puchline!</button>
-                <button onClick={this.saveToJokesFavorits} className={`jokeFav jokeFav-${this.state.punchShow}`}>Save to favorits!</button>
+                <button onClick={this.showPunchline} className={`punchButton punchButton-${this.state.jokesPunchButton}`}>Get punchline!</button>
+                <button onClick={this.saveToJokesFavorits} className={`jokeFav jokeFav-${this.state.punchShow}`}>Save to favorites!</button>
             </div>
         )
     } 

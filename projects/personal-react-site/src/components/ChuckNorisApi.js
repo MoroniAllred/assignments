@@ -42,7 +42,7 @@ class ChuckNorisApi extends Component{
                 <ChuckNorisText chuckJoke={this.state.chuckJoke}/>
                 <span className="buttons">
                     <button onClick={ this.handleChuckClick}>New Joke!</button>
-                    <button onClick={ this.saveToChuckFavorit} className={`buttonIs-${this.state.favorit} chunkButton`}>Save to favorits!</button>
+                    <button onClick={ this.saveToChuckFavorit} className={`buttonIs-${this.state.favorit} chunkButton`}>Save to favorites!</button>
                 </span>
             </div>
         )

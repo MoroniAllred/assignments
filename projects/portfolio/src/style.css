@@ -24,7 +24,7 @@
 }
 
 .about{
-    height: 300px;
+    height: 400px;
     background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
@@ -53,6 +53,28 @@
     background-size: cover;
     transform: rotate(90deg);
     border-radius: 50%;
+}
+
+.parentProjectPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#fullStackPizza{
+    background-image: url("./image/fullStack.png");
+}
+
+#laughOL{
+    background-image: url("./image/LaughOL.png")
+}
+
+.projectPic{
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 150px;
+    min-width: 300px;
+    margin: 10px
 }
 
 .footer{
@@ -117,5 +139,13 @@
 
     .aboutPicture{
         margin: 25px;
+    }
+
+    .parentProjectPic{
+        flex-direction: column;
+    }
+
+    .app{
+        background-attachment: unset;
     }
 }
