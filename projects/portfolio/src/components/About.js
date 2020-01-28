@@ -7,9 +7,9 @@ const About = () => {
         <div className="about">
             <div className="aboutMe">
                 <h3>I am a fullstack software enginer.</h3><br/>
-                <h4>I was born and raised in Utah, and I curently still
-                     live in Utah. On my free time I enjoy drit bike riding.
-                      I game on my PS4 and PC, but I am not very good at either.</h4>
+                <h4>I want to leave my legesy in the world so I have startd young.
+                    I like to build things and see the difernce they make.
+                </h4>
             </div>
             <div className="skills">
                 <h4>My hard skills include:</h4>
